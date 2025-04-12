@@ -1,0 +1,53 @@
+1a nazwa serwera
+	hostname
+1b numer jadra
+	uname -a
+2a polecenie wyswietlajace typ architektury
+	lscpu | grep 'Arch'
+2b L1 cache
+	lscpu | grep 'L1. cache'
+2c free used memory
+	free
+	cat /proc/memory | grep 'Mem' | tail -2
+3a disk space
+	lsblk -d
+3b sda1
+	lsblk -o NAME,SIZE | grep sda1 | tr -s ' ' | cut 
+3c usb
+	lsusb
+4a ip
+	ip -o -4 addr list
+4b interfaces
+	ip link
+4c
+5a
+	who -q | sed -n 1p | xargs -n1 | sort | uniq
+	tr -s ' ' | cut -d ' ' -f1
+	who -q | grep -o '[^ ]*'
+5b
+	last | tail -3 | head -1
+5c
+	id -u
+
+6a
+	ls /etc > lsetc
+6b
+	mv lsetc lsetcA
+6c
+	cp ~/systemy_operacyjne/cw1/lsetcA ~
+6d
+	mkdir ~/systemy_operacyjne/cw1/k1
+7a
+	locate -b '\os-release'
+7b
+	which ls
+8a
+	ls -l ..
+	stat ..
+	file ..
+8b
+	stat
+8c
+8d
+
+	
