@@ -1,3 +1,5 @@
+LAB 1
+
 1a nazwa serwera
 	hostname
 1b numer jadra
@@ -50,4 +52,51 @@
 8c
 8d
 
+9a
+9b
+9c
+	cat 1p 2p
+9d
+10a
+	history | tail -10
+10b
+	alias c='clear'
+
+
+LAB 2 ========================================================	
+
+tee - read from standard input and write to standard output files
+nl - number lines of files
+split - split a file into pieces
+
+
+1
+	ls /etc > lshome
+
+2a
+	ls -p | grep -v / | wc -l
+		ls -p - append indicator
+		grep -v - inverse match
+		wc -l - count lines only
+	ls -l /home | grep ^d | tr -s ' ' | cut -d ' ' -f9
+2b
+	tail -3 $(find /etc/os-release | head -1)
+	tail -3 `--||--`
+2c
+	less /etc/os-release | wc -l -w
+2d
+	ls -al /etc --time=creation | grep ^d | grep 'Apr  7' | wc -l
+2e
+	ls -p /etc/ | grep -v / | grep ^p
+		beware of symlinks (contains / !) in this version of command
+3a
 	
+3b
+	last | grep \)$ | sort -k10 | tail -1
+
+3c
+	ls -l /etc/ | grep ^- | grep ss
+3d
+	ls -l /etc/ | grep ^- | grep -E ^-[rwx-]{6}[-]{3}
+	--||--                          ^-......---
+
