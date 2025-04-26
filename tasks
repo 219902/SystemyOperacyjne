@@ -100,3 +100,7 @@ split - split a file into pieces
 	ls -l /etc/ | grep ^- | grep -E ^-[rwx-]{6}[-]{3}
 	--||--                          ^-......---
 
+
+LAB 3
+i
+
