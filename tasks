@@ -104,3 +104,14 @@ split - split a file into pieces
 LAB 3
 i
 
+
+
+LAB 4
+
+ps -e
+strace -c
+
+https://opencsf.org/Books/csf/html/ProcVThreads.html
+https://icl.utk.edu/~bosilca/classes/gb_lecture3.pdf
+https://www.kernel.org/doc/html/v5.9/virt/uml/user_mode_linux.html
+
