@@ -115,3 +115,18 @@ https://opencsf.org/Books/csf/html/ProcVThreads.html
 https://icl.utk.edu/~bosilca/classes/gb_lecture3.pdf
 https://www.kernel.org/doc/html/v5.9/virt/uml/user_mode_linux.html
 
+
+
+6.1 number of block devices
+	find /dev -type b | wc -l
+6.2 
+ls -l /dev/ | grep ^b | tr -s ' ' | cut -d ' ' f10
+lsblk --output NAME -l -n
+
+6.3
+iostat -d
+
+find /dev -type c
+
+ls -l /dev | grep ^c |....
+
