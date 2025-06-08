@@ -1,0 +1,19 @@
+#Funkcja pobierajaca nazwe pliku wykonywalego i wyswietlajaca  wybrane informacej o tym  pliku 
+plik_lok_info ()
+{
+#wczytanie nazwy pliku do zmiennej npl
+read -p "Podaj nazwę pliku: " $npl
+echo "---------------------------------------------------------"
+#lokalizacja pliku wykonywalnego
+echo "Lokalizacja pliku $npl:" $(which $npl)
+#zapisanie lokalizacji do zmiennej lpl
+lpl=$(which $npl)
+#wyznczenie rozmiaru pliku w bajtach oraz wyswietlenie tylko
+#pola z rozmiarem
+echo "Rozmiar pliku $npl w bajtach:" `du -b $lpl | cut -f 1`
+#wyzncza praw z uzycniem ls -l i filtorwaniem pierwszej sekcji 
+echo "Prawa dostępu do pliku $npl:" `ls -l $lpl | cut -f 1 -d ' '`
+#wyzncza daty modyfikacji pliku filtorwaniem pol 1-2 
+echo "Data modyfikacji pliku $npl:" `stat -c %y $lpl |  cut -f 1-2 -d ' '`
+echo "---------------------------------------------------------"
+}

@@ -1,0 +1,10 @@
+     1	drwxr-xr-x  3 root root     4096 Dec  5  2023 alsa
+     2	drwxr-xr-x  2 root root    12288 Jan  7 13:45 alternatives
+     3	drwxr-xr-x  3 root root     4096 Dec  5  2023 apache2
+     4	drwxr-xr-x  2 root root     4096 Dec  5  2023 apparmor
+     5	drwxr-xr-x  7 root root     4096 Dec  5  2023 apparmor.d
+     6	drwxr-xr-x  8 root root     4096 Dec  7  2023 apt
+     7	drwxr-xr-x  3 root root     4096 Dec  5  2023 avahi
+     8	drwxr-xr-x  2 root root     4096 Dec  5  2023 bash_completion.d
+     9	drwxr-xr-x  2 root root     4096 Mar 20  2022 binfmt.d
+    10	drwxr-xr-x  2 root root     4096 Dec  5  2023 bluetooth

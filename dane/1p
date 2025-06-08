@@ -1,0 +1,10 @@
+     1	total 1264
+     2	-rw-r--r--  1 root root     2981 Dec  5  2023 adduser.conf
+     3	-rw-r--r--  1 root root       44 Dec  5  2023 adjtime
+     4	-rw-r--r--  1 root root      194 Jan  7 13:45 aliases
+     5	drwxr-xr-x  3 root root     4096 Dec  5  2023 alsa
+     6	drwxr-xr-x  2 root root    12288 Jan  7 13:45 alternatives
+     7	-rw-r--r--  1 root root      401 Feb  6  2021 anacrontab
+     8	drwxr-xr-x  3 root root     4096 Dec  5  2023 apache2
+     9	drwxr-xr-x  2 root root     4096 Dec  5  2023 apparmor
+    10	drwxr-xr-x  7 root root     4096 Dec  5  2023 apparmor.d
