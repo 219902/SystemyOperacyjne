@@ -133,6 +133,9 @@ ls -l /dev | grep ^c |....
 W celu wyświetlenia liczby wątków w systemie w konsoli należy wpisać formułę:
     ps -eLF | wc -l
 
+W celu wyświetlenia nazwy i rozmiar największej partycji
+    df --output=size,target | sort -nr | head -1
+
 W celu wyświetlenia ponumerowanych nazw plików znakowych rozpoczynających się od a, b lub c w konsoli należy wpisać formułę:
     ls -l /dev | grep ^c | tr -s ' ' | cut -d ' ' -f10 | grep ^[a,b,c] | nl
 
