@@ -130,3 +130,19 @@ find /dev -type c
 
 ls -l /dev | grep ^c |....
 
+W celu wyświetlenia liczby wątków w systemie w konsoli należy wpisać formułę:
+    ps -eLF | wc -l
+
+W celu wyświetlenia ponumerowanych nazw plików znakowych rozpoczynających się od a, b lub c w konsoli należy wpisać formułę:
+    ls -l /dev | grep ^c | tr -s ' ' | cut -d ' ' -f10 | grep ^[a,b,c] | nl
+
+W celu wyświetlenia  liczby  katalogów w systemie w konsoli należy wpisać formułę.
+    locate --statistics | head -2 | tail -1
+
+aplikacje tcp
+    ss -taH | wc -l
+
+Podaj łańcuch poleceń, który po wpisaniu w konsoli wyświetli ponumerowaną liczbę partycji na dysku sda.
+    lsblk /dev/sda -l -o NAME -n | nl
+
+
